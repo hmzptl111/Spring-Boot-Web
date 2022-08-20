@@ -1,0 +1,23 @@
+package com.map.presentation;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.map.bean.Employee;
+import com.map.service.EmployeeService;
+
+public class EmployeePresentationImpl implements EmployeePresentation {
+	@Autowired
+	private EmployeeService employeeService;
+	
+	@Override
+	public void menu() {
+		System.out.println("1. List all employees");
+		
+		List<Employee> employees = employeeService.findAllEmployees();
+		for(Employee employee: employees) {
+			System.out.println(employee);
+		}
+	}
+}

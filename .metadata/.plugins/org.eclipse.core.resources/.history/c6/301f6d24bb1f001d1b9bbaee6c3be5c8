@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th = "https://org.thymeleaf.com">
+<head>
+<meta charset="ISO-8859-1">
+<title>Movie Management System - Movies</title>
+</head>
+<body>
+	<p th:text = "${message}"></p>
+	
+	<div th:each = "movie: ${movies}">
+		<a th:href = "@{/movies/${movie.id}}">
+			<span th:text = "${movie.name}"></span>
+		</a>
+	</div>
+</body>
+</html>

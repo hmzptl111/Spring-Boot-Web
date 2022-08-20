@@ -1,0 +1,19 @@
+package com.map.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.map.bean.Employee;
+import com.map.persistence.EmployeeDao;
+
+public class EmployeeServiceImpl implements EmployeeService {
+	
+	@Autowired
+	private EmployeeDao employeeDao;
+
+	@Override
+	public List<Employee> findAllEmployees() {
+		return employeeDao.findAll();
+	}
+}

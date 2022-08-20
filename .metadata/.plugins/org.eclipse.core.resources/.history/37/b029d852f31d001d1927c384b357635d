@@ -1,0 +1,11 @@
+package com.map.service;
+
+import java.util.List;
+
+import com.map.bean.Employee;
+
+public interface EmployeeService {
+	List<Employee> findAllEmployees();
+	
+	List<Employee> findEmployeesByDepartment();
+}

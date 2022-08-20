@@ -1,0 +1,9 @@
+package com.map.presentation;
+
+public class EmployeePresentationImpl implements EmployeePresentation {
+
+	@Override
+	public void menu() {
+		
+	}
+}

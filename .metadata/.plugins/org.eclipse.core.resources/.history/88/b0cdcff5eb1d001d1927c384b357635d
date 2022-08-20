@@ -1,0 +1,15 @@
+package com.map.service;
+
+import java.util.List;
+
+import com.map.bean.Employee;
+
+public class EmployeeServiceImpl implements EmployeeService {
+
+	@Override
+	public List<Employee> findAllEmployees() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,36 @@
+package com.map.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.map.bean.Employee;
+import com.map.persistence.EmployeeDao;
+
+@Service
+public class EmployeeServiceImpl implements EmployeeService {
+	
+	@Autowired
+	private EmployeeDao employeeDao;
+
+	@Override
+	public List<Employee> findAllEmployees() {
+		return employeeDao.findAll();
+	}
+
+	@Override
+	public List<Employee> findEmployeesByDepartment(String department) {
+		return employeeDao.findByDepartment(department);
+	}
+
+	@Override
+	public List<Employee> findManagersInDepartment(String department) {
+		return employeeDao.findByDesignationAndDepartment("Manager", "IT");
+	}
+
+	@Override
+	public List<String> findAllDesignations() {
+		return employeeDao.findDistinctByDesignation();
+	}
+}

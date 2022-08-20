@@ -1,0 +1,10 @@
+package com.movie.model.service;
+
+import com.movie.bean.Movie;
+import com.movie.bean.Movies;
+
+public interface MovieService {
+	Movies getAllMovies();
+	
+	Movie getMovieById();
+}

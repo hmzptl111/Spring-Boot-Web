@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th = "https://org.thymeleaf.com">
+<head>
+<meta charset="ISO-8859-1">
+<title>Movie Management System - Movie</title>
+</head>
+<body>
+	<p th:text = "${message}"></p>
+	
+	<div th:text = "${movie.id} + ' ' + ${movie.name}"></div>
+</body>
+</html>

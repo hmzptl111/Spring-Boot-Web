@@ -1,0 +1,28 @@
+package com.rest.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class RESTServiceImpl implements RESTService {
+
+	@Override
+	public int factorial(int number) {
+		if(number == 1) return 1;
+		
+		return number * factorial(number - 1);
+	}
+
+	@Override
+	public boolean isPalindrome(int number) {
+		int r,sum=0,temp; 
+		  
+		  temp=number;    
+		  while(number>0){    
+		   r=number%10;
+		   sum=(sum*10)+r;    
+		   number=number/10;    
+		  }    
+		  return (temp==sum);
+	}
+
+}

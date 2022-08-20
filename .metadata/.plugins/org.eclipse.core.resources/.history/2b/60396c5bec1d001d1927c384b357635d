@@ -1,0 +1,13 @@
+package com.map.app;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MappingEmployeeTableUsingSpringDataJpaApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MappingEmployeeTableUsingSpringDataJpaApplication.class, args);
+	}
+
+}

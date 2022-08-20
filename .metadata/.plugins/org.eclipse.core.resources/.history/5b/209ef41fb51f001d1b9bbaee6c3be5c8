@@ -1,0 +1,20 @@
+package com.movie.model.service;
+
+import com.movie.bean.Movie;
+import com.movie.bean.Movies;
+
+public class MovieServiceImpl implements MovieService {
+
+	@Override
+	public Movies getAllMovies() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Movie getMovieById() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

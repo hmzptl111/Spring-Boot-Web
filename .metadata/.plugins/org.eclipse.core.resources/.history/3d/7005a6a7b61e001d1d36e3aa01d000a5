@@ -1,0 +1,17 @@
+package com.rest.service;
+
+public class RESTServiceImpl implements RESTService {
+
+	@Override
+	public int factorial(int number) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public boolean isPalindrome(int number) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

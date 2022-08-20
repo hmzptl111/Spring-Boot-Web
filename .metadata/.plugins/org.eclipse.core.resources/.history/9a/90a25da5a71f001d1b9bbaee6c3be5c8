@@ -1,0 +1,16 @@
+package com.movie.bean;
+
+import javax.persistence.Entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+@Entity
+public class Movie {
+	private int id;
+	private String name;
+}

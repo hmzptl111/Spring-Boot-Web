@@ -1,0 +1,21 @@
+package com.map.app;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.map.presentation.EmployeePresentation;
+
+@SpringBootApplication
+public class MappingEmployeeTableUsingSpringDataJpaApplication {
+	@Autowired
+	private static EmployeePresentation employeePresentation;
+
+	public static void main(String[] args) {
+		SpringApplication.run(MappingEmployeeTableUsingSpringDataJpaApplication.class, args);
+		while(true) {
+			employeePresentation.menu();
+		}
+	}
+
+}

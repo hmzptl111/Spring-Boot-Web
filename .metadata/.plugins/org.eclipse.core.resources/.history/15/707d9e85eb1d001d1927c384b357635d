@@ -1,0 +1,5 @@
+package com.map.persistence;
+
+public interface EmployeeDao {
+
+}

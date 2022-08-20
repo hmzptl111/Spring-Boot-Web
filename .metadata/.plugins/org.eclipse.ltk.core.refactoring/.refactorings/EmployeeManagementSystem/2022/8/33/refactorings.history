@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;EmployeeManagementSystem/src/main/resources/templates/employeePayslip.html&apos; to &apos;inputEmployeePayslip.html&apos;" description="Rename resource &apos;employeePayslip.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/employeePayslip.html" name="inputEmployeePayslip.html" stamp="1660286481862" updateReferences="true"/>
+</session>
